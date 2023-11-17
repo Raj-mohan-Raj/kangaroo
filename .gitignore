@@ -1,0 +1,5 @@
+#NodeModules Packages
+node_modules/
+
+#Credentials File
+.env

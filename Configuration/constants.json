@@ -1,0 +1,26 @@
+{
+    "ROUTER": {
+        "FEATURED_PRODUCTS": "/getFeaturedProductions",
+        "RATED_PRODUCTS": "/getRatedProducts",
+        "HOMEPAGE_PRODUCTS": "/homePageProducts"
+    },
+    "QUERY": {
+        "PRE_LOGIN": {
+
+        },
+        "POST_LOGIN": {
+            "GET_FEATURED_PRODUCTS": "",
+            "GET_RATED_PRODUCTS": "",
+            "GET_HOME_PRODUCTS": "SELECT category, productName, productId, retailPrice, actualPrice, userReviewRate, userReviews from products WHERE type = ? ORDER BY createdAt DESC LIMIT 10;"
+        }
+    },
+    "MESSAGE": {
+        "SUCCESS": {
+            "DATA_FETCHED": "Data fetched successfully"
+        },
+        "ERROR": {
+            "DB_ERROR": "Database Error...",
+            "INVALID": "Data is not sufficient to process.....Invalid Type Format...."
+        }
+    }
+}
